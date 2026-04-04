@@ -127,7 +127,7 @@ public:
   /// WakeUpSignal so it can check for early wake-up.
   /// Return true if woken up before the timeout, false if the full duration elapsed.
   using SleepOverrideFunc =
-    std::function<bool(std::chrono::system_clock::duration, WakeUpSignal&)>;
+      std::function<bool(std::chrono::system_clock::duration, WakeUpSignal&)>;
 
   /**
     * @brief Sleep for a certain amount of time. This sleep could be interrupted by the methods
